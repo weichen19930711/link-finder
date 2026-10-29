@@ -1,0 +1,26 @@
+[project]
+name = "link-finder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "chen_w25", email = "2471142690@qq.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "scrapingbee>=2.2.0",
+    "tqdm>=4.70.1",
+    "xmltodict>=1.0.4",
+]
+
+[project.scripts]
+link-finder = "link_finder:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
